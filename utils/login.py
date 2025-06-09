@@ -58,11 +58,18 @@ def generarMenu(usuario):
         st.write(f"Hello **:blue-background[{nombre}]** ")
         
         # Mostramos los enlaces de páginas
+<<<<<<< HEAD
         st.page_link("app.py", label="Home", icon=":material/home:")
         st.subheader(":material/dashboard: Dashboard")
         st.page_link("pages/player_report_from_layout.py", label="Reports", icon=":material/picture_as_pdf:")
         st.page_link("pages/player_assessments.py", label="Formularios de evaluacion", icon=":material/description:")
         st.page_link("pages/sc_assessments.py", label="SC Assessments", icon=":material/description:")
+=======
+        st.page_link("app.py", label="Inicio", icon=":material/home:")
+        st.subheader(":material/dashboard: Tableros")
+        st.page_link("pages/player.py", label="360", icon=":material/contacts:")
+        st.page_link("pages/player_report_from_layout.py", label="Reportes", icon=":material/picture_as_pdf:")
+>>>>>>> 203a185 (corregido el label del menu)
 
         st.subheader(":material/manage_accounts: Administrator")
 
