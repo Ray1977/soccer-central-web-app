@@ -69,20 +69,7 @@ def Setup_page():
     login.generarLogin()
     logo = "./assets/images/soccer-central.png"
     st.sidebar.image(logo, width=350)
-
-    with open("./assets/css/styles.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-    main_bg_color = st.sidebar.color_picker("**Choose Background Color for Principal Panel**", "#EDF4F5")
-    sidebar_bg_color = st.sidebar.color_picker("**Choose Background Color for Sidebar Panel**", "#D0DEE2")
-
-    st.markdown(f"""
-        <style>
-        [data-testid="stAppViewContainer"] {{ background-color: {main_bg_color}; }}
-        [data-testid="stSidebar"] {{ background-color: {sidebar_bg_color}; }}
-        </style>
-    """, unsafe_allow_html=True)
->>>>>>> 16ef97c (Actualizar conector BD a SQLAlchemy, modificar boton de descarga de reporte)
+    
 
 def Show_Player_Info():
     st.header("360° PLAYER DATA", divider="gray")
