@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- [Enhance player‐evaluation UI and process flow.](https://trello.com/c/mUnuSPrA) 
+- Refine the presentation and selection of player evaluation parameters 
+- Add process‐flow controls to guide the evaluator and ensure they complete the evaluation. 
+- Log past evaluations, with the ability to edit or delete the most recent entry.
+- Update class PlayerAssessments(Base), category mapped_column(String(50) in models.py to support saving records to the database.
+
+### Changed
 - [RAG System Integration](https://trello.com/c/d8jSzEcU/14-crear-chatbot-agente-ai)
     - Restrict context to only football, professional answers only
 
